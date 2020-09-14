@@ -1,0 +1,15 @@
+server.port: 9080
+
+spring:
+  application:
+    name: "arkcase-auth-time-windowing-demo"
+  kafka:
+    host: "http://localhost"
+    bootstrapAddress: "http://localhost:9092"
+    schemaRegistryAddress: "http://localhost:8081"
+    streams:
+      state-dir: "/tmp/kafka-streams"
+      host: "http://localhost"
+    topic:
+      ldap-auth: "ldap_auth_topic"
+      kerberos-auth: "kerberos_auth_topic"
